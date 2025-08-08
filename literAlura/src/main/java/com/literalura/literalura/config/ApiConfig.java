@@ -1,0 +1,14 @@
+package com.literalura.literalura.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.client.RestClient;
+
+@Configuration
+public class ApiConfig {
+    @Bean
+    public RestClient.Builder restClientBuilder() {
+        return RestClient.builder()
+                .baseUrl("https://gutendex.com/"); // URL base de la API
+    }
+}

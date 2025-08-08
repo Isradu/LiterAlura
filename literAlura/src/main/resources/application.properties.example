@@ -1,0 +1,11 @@
+spring.application.name=literAlura
+# Configuración de la Base de Datos PostgreSQL
+spring.datasource.url=jdbc:postgresql://localhost:5432/literAlura
+spring.datasource.username=postgres
+# spring.datasource.password=su_contraseña
+spring.datasource.driver-class-name=org.postgresql.Driver
+
+# Opcional: Para mostrar las consultas SQL en consola
+spring.jpa.show-sql=true
+# Opcional: Para que Hibernate cree y actualice el esquema de la base de datos
+spring.jpa.hibernate.ddl-auto=update
